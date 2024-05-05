@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Adebouge Holdings || Who Are We</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            backgroundImage: {
+              "hero-background":
+                "linear-gradient(#000000A0, #000000A0), url('./assets/hero-banner.jpg')",
+              "footer-texture": "url('/img/footer-texture.png')",
+            },
+            colors: {
+              clifford: "#da373d",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body>
+    <main>
+      <section
+        class="flex items-center justify-between gap-6 w-4/5 mx-auto p-[10%]"
+      >
+        <div class="w-2/5 flex-1">
+          <h2 class="text-4xl font-bold">Who are we ?</h2>
+          <p>
+            We are a team of experts in strategic private investments, targeting
+            exceptional returns across vital sectors such as cloud
+            infrastructure, healthcare technology, and agro-tech.
+          </p>
+        </div>
+        <figure class="w-2/5 flex-1 rounded-lg overflow-hidden">
+          <img src="./assets/who-are-we.jpg" alt="" />
+        </figure>
+      </section>
+
+      <div class="bg-black text-white">
+        <section
+          class="flex items-center justify-between w-4/5 mx-auto p-[10%]"
+        >
+          <div class="w-2/5  flex-1 flex flex-col gap-6 text-lg">
+            <p>
+              Our commitment extends beyond financial gains, focusing on
+              creating sustainable job opportunities for youth in emerging
+              markets.
+            </p>
+            <p>
+              Our Goal is to help drive economic growth and societal progress,
+              positioning ourselves as catalysts for enduring positive change.
+            </p>
+            <p>
+              Our investment philosophy centres on generating tangible impacts,
+              making us the premier choice for investors who value profit with
+              purpose.
+            </p>
+          </div>
+
+          <div class="w-2/5 text-center flex-1 flex flex-col gap-2"></div>
+        </section>
+      </div>
+    </main>
+
+    <footer class="p-5 bg-black text-white">
+<div class="w-4/5 mx-auto text-sm">
+    <p>©2024 Adebouge Holdings All rights reserved</p>
+</div>
+    </footer>
+  </body>
+</html>

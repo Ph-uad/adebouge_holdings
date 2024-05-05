@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Adebouge Holdings</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            backgroundImage: {
+              "hero-background":
+                "linear-gradient(#000000A0, #000000A0), url('./assets/hero-banner.jpg')",
+              "footer-texture": "url('/img/footer-texture.png')",
+            },
+            colors: {
+              clifford: "#da373d",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="h-screen w-screen overflow-hidden">
+    <div
+      class="h-screen w-screen p-[10%] flex items-center justify-center bg-hero-background bg-cover bg-center text-white"
+    >
+      <header class="flex flex-col gap-4">
+        <h1 class="text-6xl">Long-term Impact Investing</h1>
+        <p class="text-right">Economic longevity, social prosperity and planetary stewardship</p>
+        <a class="px-4 py-3 bg-blue-800 w-fit ml-auto" rel="stylesheet" href="./who-are-we.html">Read More </a>
+      </header>
+
+      <footer class="p-5 text-white absolute bottom-4  left-0 w-screen">
+        <div class="w-4/5 mx-auto text-sm">
+          <p>©2024 Adebouge Holdings All rights reserved</p>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
+˝
