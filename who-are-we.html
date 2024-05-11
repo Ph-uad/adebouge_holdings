@@ -3,16 +3,20 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Adebouge Holdings || Who Are We</title>
-
+    <title>VortEdge || About Us</title>
+    <link rel="stylesheet" href="./global.css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
       tailwind.config = {
         theme: {
           extend: {
             backgroundImage: {
-              "hero-background":
-                "linear-gradient(#000000A0, #000000A0), url('./assets/hero-banner.jpg')",
+              "about-us-banner":
+                "linear-gradient(#000000A0, #000000A0), url('./assets/about-us-banner.jpg')",
+              pattern:
+                "linear-gradient(#000000A0, #000000A0), url('./assets/bg-pattern.webp')",
+              "fade-out-white":
+                "linear-gradient(white , #ffffff90, transparent)",
               "footer-texture": "url('/img/footer-texture.png')",
             },
             colors: {
@@ -23,54 +27,114 @@
       };
     </script>
   </head>
-  <body>
-    <main>
+  <body
+    class="overscroll-none bg-pattern bg-cover bg-about-us-banner bg-center bg-no-repeat bg-fixed"
+  >
+    <div
+      class="bg-about-us-banner bg-center bg-no-repeat h-[40vh] w-full"
+    ></div>
+    <main class="bg-white pb-20">
       <section
         class="flex items-center justify-between gap-6 w-4/5 mx-auto p-[10%]"
       >
-        <div class="w-2/5 flex-1">
-          <h2 class="text-4xl font-bold">Who are we ?</h2>
-          <p>
-            We are a team of experts in strategic private investments, targeting
-            exceptional returns across vital sectors such as cloud
-            infrastructure, healthcare technology, and agro-tech.
-          </p>
-        </div>
-        <figure class="w-2/5 flex-1 rounded-lg overflow-hidden">
-          <img src="./assets/who-are-we.jpg" alt="" />
-        </figure>
-      </section>
+        <article class="w-2/5 flex-1 flex gap-4 flex-col">
+          <header>
+            <h2 class="text-4xl font-bold">Services Overview</h2>
+          </header>
+          <div class="md:columns-2 gap-4">
+            <p>
+              At VortEdge, we revolutionize the landscape of mergers and
+              acquisitions by seamlessly blending profound industry expertise
+              with cutting-edge AI technologies. Our distinguished team,
+              meticulously selected from premier MBA programs and adept in AI
+              methodologies, harnesses the power of advanced analytics and
+              machine learning to craft bespoke, efficacious strategies. Guided
+              by a structured four-phase approach —<em
+                >Discover, Plan & Analyze, Implement, and Evaluate & Report</em
+              >— we meticulously navigate each stage of the M&A journey with
+              precision and insight
+            </p>
 
-      <div class="bg-black text-white">
-        <section
-          class="flex items-center justify-between w-4/5 mx-auto p-[10%]"
-        >
-          <div class="w-2/5  flex-1 flex flex-col gap-6 text-lg">
             <p>
-              Our commitment extends beyond financial gains, focusing on
-              creating sustainable job opportunities for youth in emerging
-              markets.
+              Our utilization of predictive analytics and AI algorithms ensures
+              the delivery of finely-tailored solutions meticulously aligned
+              with your unique objectives, ushering in a new era of M&A advisory
+              characterized by unparalleled market access and actionable
+              insights. With a focus on transaction advisory, restructuring, and
+              performance enhancement, our expertise spans across pivotal
+              industries, encompassing the intricate realms of cloud
+              infrastructure, healthcare, retail, energy, and insurance.
+            </p>
+
+            <p>
+              Furthermore, we extend our proficiency to encompass a spectrum of
+              supplementary services, including tax consultation, real estate
+              analysis, and valuation strategies, all fortified by AI-driven
+              innovations. From the financial sector to the realms of travel and
+              hospitality, our AI solutions are adeptly engineered to enhance
+              compliance and ensure regulatory adherence, positioning VortEdge
+              as the quintessential partner for strategic advancement and
+              sustainable growth.
+            </p>
+          </div>
+        </article>
+        <!-- <figure class="w-2/5 flex-1 rounded-lg overflow-hidden">
+          <img src="./assets/who-are-we.jpg" alt="" />
+        </figure> -->
+      </section>
+    </main>
+
+    <div class="text-white">
+      <section
+        class="flex flex-col md:flex-row items-center justify-between lg:w-4/5 mx-auto p-[10%]"
+      >
+        <article class="lg:w-2/5 w-full flex-1 text-lg">
+          <header>
+            <h2 class="text-4xl font-bold">Focus</h2>
+          </header>
+
+          <div class="flex flex-col gap-1 text-base mt-3">
+            <p>
+              VortEdge specializes in revolutionizing mergers and acquisitions
+              through advanced AI technologies. Our team, comprised of top
+              MBA-educated experts skilled in AI methodologies, crafts
+              personalized strategies for clients across diverse sectors.
             </p>
             <p>
-              Our Goal is to help drive economic growth and societal progress,
-              positioning ourselves as catalysts for enduring positive change.
+              By integrating predictive analytics and AI algorithms, VortEdge
+              ensures precise solutions tailored to individual needs, setting a
+              new standard in M&A advisory. We excel in transaction
+              advisory,restructuring, and performance improvement, with a focus
+              on key industries like cloud infrastructure, healthcare, retail,
+              energy, and insurance.
             </p>
             <p>
-              Our investment philosophy centres on generating tangible impacts,
-              making us the premier choice for investors who value profit with
-              purpose.
+              Additionally, our AI-driven innovations extend to supplementary
+              services such as tax consultation and real estate analysis,
+              enhancing compliance and regulatory adherence for strategic
+              advancement across sectors.
             </p>
           </div>
 
-          <div class="w-2/5 text-center flex-1 flex flex-col gap-2"></div>
-        </section>
-      </div>
-    </main>
+          <ol
+            class="italic ml-6 text-xs my-2 flex flex-wrap space-x-4 md:space-x-10"
+          >
+            <li>Innovation in M&A</li>
+            <li>Expertise and Excellence</li>
+            <li>Personalized Solutions</li>
+            <li>Industry Specialization</li>
+            <li>Innovation in M&A</li>
+          </ol>
+        </article>
+
+        <div class="w-2/5 text-center flex-1 flex flex-col gap-2"></div>
+      </section>
+    </div>
 
     <footer class="p-5 bg-black text-white">
-<div class="w-4/5 mx-auto text-sm">
-    <p>©2024 Adebouge Holdings All rights reserved</p>
-</div>
+      <div class="w-4/5 mx-auto text-sm">
+        <p>©2024 Adebouge Holdings All rights reserved</p>
+      </div>
     </footer>
   </body>
 </html>
